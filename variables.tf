@@ -1,14 +1,14 @@
-variable "random_suffix" {
-  description = "Enables project random id generation. Mutually exclusive with project_id being non-empty."
-  type        = bool
-  default     = false
-}
+# variable "random_suffix" {
+#   description = "Enables project random id generation. Mutually exclusive with project_id being non-empty."
+#   type        = bool
+#   default     = false
+# }
 
-variable "org_id" {
-  description = "The organization ID."
-  type        = string
-  default     = false
-}
+# variable "org_id" {
+#   description = "The organization ID."
+#   type        = string
+#   default     = false
+# }
 
 variable "project_name" {
   description = "The name for the project"

@@ -1,6 +1,7 @@
-provider "google" {
-  project = "${var.project_name}"
-}
+# provider "google" {
+#   project     = "${var.project_name}"
+#   credentials = "${var.credentials}"
+# }
 
 locals {
   filters = {

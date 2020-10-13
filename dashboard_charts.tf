@@ -3,6 +3,7 @@ data "template_file" "dashboard_json" {
 }
 
 resource "google_monitoring_dashboard" "dashboard" {
+  provider       = "google-beta"
   project        = "${var.project_name}"
   dashboard_json = "${data.template_file.dashboard_json.rendered}"
 }
